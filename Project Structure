@@ -1,0 +1,73 @@
+smart-interview-prep-ai/
+│
+├── backend/
+│   ├── app/
+│   │   ├── main.py                # FastAPI entry point
+│   │   ├── config.py              # Env & settings
+│   │   │
+│   │   ├── api/
+│   │   │   ├── interview.py       # Interview endpoints
+│   │   │   ├── user.py            # User/profile endpoints
+│   │   │   └── health.py
+│   │   │
+│   │   ├── interview_engine/
+│   │   │   ├── question_generator.py
+│   │   │   ├── answer_evaluator.py
+│   │   │   ├── feedback_generator.py
+│   │   │   └── scoring.py
+│   │   │
+│   │   ├── llm/
+│   │   │   ├── client.py           # OpenAI / LLM wrapper
+│   │   │   └── prompts.py
+│   │   │
+│   │   ├── models/
+│   │   │   ├── user.py
+│   │   │   ├── interview.py
+│   │   │   └── answer.py
+│   │   │
+│   │   ├── database/
+│   │   │   ├── db.py
+│   │   │   └── session.py
+│   │   │
+│   │   └── utils/
+│   │       └── validators.py
+│   │
+│   ├── requirements.txt
+│   └── .env.example
+│
+├── frontend/
+│   ├── src/
+│   │   ├── pages/
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Interview.jsx
+│   │   │   ├── Feedback.jsx
+│   │   │   └── Progress.jsx
+│   │   │
+│   │   ├── components/
+│   │   │   ├── QuestionCard.jsx
+│   │   │   ├── AnswerBox.jsx
+│   │   │   ├── ScoreCard.jsx
+│   │   │   └── Navbar.jsx
+│   │   │
+│   │   ├── services/
+│   │   │   └── api.js
+│   │   │
+│   │   └── styles/
+│   │       └── tailwind.css
+│   │
+│   ├── package.json
+│   └── vite.config.js
+│
+├── prompts/
+│   ├── question_prompt.txt
+│   ├── evaluation_prompt.txt
+│   └── feedback_prompt.txt
+│
+├── docs/
+│   ├── architecture.png
+│   ├── user-flow.png
+│   └── screenshots/
+│
+├── roadmap.md
+├── README.md
+└── LICENSE
